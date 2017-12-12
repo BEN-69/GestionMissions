@@ -1,13 +1,12 @@
 <?php
-include_once ('connect.php');
-include_once ('fonction.fun.php');
+include_once('fonctions/connect.php');
+include_once('fonctions/fonction.fun.php');
 
      if(!empty($_GET)){
 
             if(isset($_GET['id'])) {
 
                 $id = $_GET['id'];
-
 
                 $query = 'DELETE FROM `ingenieurs` WHERE idingenieurs =' . $id;
 

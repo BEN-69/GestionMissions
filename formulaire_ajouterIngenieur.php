@@ -1,6 +1,6 @@
 <?php
-include_once ('connect.php');
-include_once ('fonction.fun.php');
+include_once('fonctions/connect.php');
+include_once('fonctions/fonction.fun.php');
      if(!empty($_POST)){
          
           if(!empty($_POST['nom']) and !empty($_POST['prenom']) and !empty($_POST['agence']) and  !empty($_POST['telephone'])){
@@ -38,16 +38,16 @@ include_once ('fonction.fun.php');
     <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" type="text/css" href="principal.css" />
+    <link rel="stylesheet" type="text/css" href="css/principal.css" />
     <!-- Bootstrap -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 <?php
-require_once 'menu.php';
+require_once 'includes/menu.php';
 ?>
 
 <div class="col-md-12 col-xs-12 spacer">
@@ -117,7 +117,7 @@ require_once 'menu.php';
     </div>
 
     <?php
-    require_once 'footer.php';
+    require_once 'includes/footer.php';
     ?>
 
 </body>
